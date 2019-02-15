@@ -1,0 +1,54 @@
+#
+# Include this file in your .gitconfig via the following command
+#
+#    git config --global include.path ~/.gitconfig.template
+#
+
+[user]
+	name = Richard Forrest
+	email = richard.a.forrest@gmail.com
+
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+
+[include]
+        path = ~/.gitconfig.aliase
+
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f  
+
+[core]
+	editor = 'C:/Program Files (x86)/vim/vim80'
+	autocrlf = true
+  
+[push]
+	default = current
+  
+[merge]
+	tool = kdiff3
+  
+[mergetool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+	trustExitCode = false
+  keepBackup = false
+  
+[diff]
+	guitool = kdiff3
+  
+[difftool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+	trustExitCode = false  
+  
+[rerere]
+  # Remember config resolution
+  enabled = true                
+        
+[pager]
+  #Dont page list of branches
+  branch = false
