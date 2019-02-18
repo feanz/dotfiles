@@ -24,7 +24,7 @@
 	clean = git-lfs clean -- %f  
 
 [core]
-	editor = 'C:/Program Files (x86)/vim/vim80'
+	editor = 'C:/Program Files (x86)/vim/vim80/vim.exe'
 	autocrlf = true
   
 [push]
